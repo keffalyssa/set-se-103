@@ -1,2 +1,2 @@
 #!/bin/bash
-i=0; while read line; do i=$((i+1)); if [ $i -le 4 ]; then echo "$line"; fi; done < /etc/passwd
+grep -A3 root /etc/passwd
